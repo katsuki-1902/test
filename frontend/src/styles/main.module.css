@@ -1,0 +1,265 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+
+.header>h1 {
+    color: #fff;
+    font-size: 28px;
+    margin: 0;
+    height: max-content;
+    margin-left: 30px;
+
+}
+
+.main>* {
+    margin-bottom: 20px !important;
+}
+
+
+.banner>img {
+    width: 100%;
+
+    aspect-ratio: 24/9;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user svg {
+    cursor: pointer;
+}
+
+.cart>svg {
+    width: 35px;
+    height: 35px;
+    stroke: #fff;
+    position: relative;
+}
+
+.cart {
+    position: relative;
+
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 500;
+    transform: translate(30%, -30%);
+
+}
+
+.cart>svg * {
+    width: 35px;
+    height: 35px;
+    stroke: #fff;
+    fill: none
+}
+
+.user>a>svg {
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+}
+
+.user>a>svg * {
+    width: 35px;
+    height: 35px;
+
+}
+
+.term {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+.term>* {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+
+}
+
+.term * {
+    font-weight: 400;
+
+}
+
+.term svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--primary-color);
+}
+
+.term svg * {
+    width: 40px;
+    height: 40px;
+    fill: var(--primary-color);
+}
+
+.term strong {
+    font-size: 15px;
+    color: #333;
+    display: block;
+    text-transform: uppercase;
+}
+
+.term p {
+    color: #787878;
+    font-size: 14px;
+    margin-top: 5px;
+    height: 120px;
+}
+
+.slogan {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan>div {
+
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan>div>p {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+.slogan>div>p:last-child {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #9c9c9c;
+    white-space: nowrap;
+    text-transform: unset;
+}
+
+
+
+.slogan::before, .slogan::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    border: 1px solid #000;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 0 20px;
+}
+
+footer {
+    background: #1c2632;
+    border-top: 1px solid #addef0;
+}
+
+.footer-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 30px;
+    font-size: 14px;
+    gap: 30px;
+}
+
+
+
+
+
+.box-footer-column {
+    width: 100%;
+    max-width: 250px;
+}
+
+.box-footer-column * {
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.75;
+
+}
+
+.box-footer-column h3 {
+    font-size: 15px;
+    color: #fff;
+    opacity: 1;
+    text-transform: uppercase;
+
+}
+
+.footer-list-menu>li {
+    list-style: none;
+}
+
+.footer-bottom {
+    height: max-content;
+}
+
+.footer-bottom>p {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #fff;
+    border-top: 1px solid #2e3742;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: max-content;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.contact-icon {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

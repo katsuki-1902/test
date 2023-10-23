@@ -1,0 +1,82 @@
+.delete-btn {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.delete-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #f00;
+}
+
+.delete-btn svg * {
+    width: 20px;
+    height: 20px;
+    fill: #f00;
+}
+
+.delete-btn>div {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    background-color: #fff;
+    max-width: 200px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    font-size: 14px;
+
+}
+
+.delete-btn>div>div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn>div>div>button {
+    width: 40%;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #fff;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+
+.delete-btn>div>div>button:last-child {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.delete-btn-modal {
+    transform: scale(0) translateY(-100%);
+    z-index: -10;
+    transition: all 0.2s ease-in-out;
+    top: -10px;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.delete-btn-modal button {
+    width: max-content !important;
+    white-space: nowrap;
+}
+
+
+.delete-btn-modal.active {
+    transform: scale(1) translateY(-100%);
+    z-index: 10;
+}
+
+.delete-btn>button {
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    height: 20px;
+}

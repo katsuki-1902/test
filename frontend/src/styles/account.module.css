@@ -1,0 +1,66 @@
+.account-container {
+    height: 67vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 350px;
+    height: max-content;
+    box-shadow: 0px 0px 6px 0px rgba(158, 158, 158, 0.75);
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.account-box input {
+    background-color: #fff;
+    font-size: 1em;
+    padding: 6px 8px;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.account-box>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-box>strong {
+    font-size: 1.2em;
+}
+
+.account-box>div>button {
+    width: 46%;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 600px;
+}
+
+.account-box>div>button:last-child {
+    color: #fff;
+    background-color: var(--primary-color);
+
+}
+
+.account-box>div:last-child {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+}
+
+.account-box>div:last-child>a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
