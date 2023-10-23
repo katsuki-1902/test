@@ -1,3 +1,3 @@
-# supportdoan
-# supportdoan
-# supportdoan
+# testprj
+npm install
+npm run dev
